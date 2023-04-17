@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE0AC5886B9ECB087B07F84A /* Pods_FoundationRimac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A360ACB2845345A3E377432A /* Pods_FoundationRimac.framework */; };
 		FD4D2C2129E9E4D800F525D3 /* FoundationRimac.h in Headers */ = {isa = PBXBuildFile; fileRef = FD4D2C2029E9E4D800F525D3 /* FoundationRimac.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD6B865C29EDE78000EE1F77 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6B865B29EDE78000EE1F77 /* TestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		069336522471BAD3187F0D36 /* Pods-FoundationRimac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoundationRimac.debug.xcconfig"; path = "Target Support Files/Pods-FoundationRimac/Pods-FoundationRimac.debug.xcconfig"; sourceTree = "<group>"; };
+		4D4D85299CB58B1B0CCF1E37 /* Pods-FoundationRimac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoundationRimac.release.xcconfig"; path = "Target Support Files/Pods-FoundationRimac/Pods-FoundationRimac.release.xcconfig"; sourceTree = "<group>"; };
+		89BE151494CE1AEC361850DF /* Pods-Rimac-FoundationRimac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rimac-FoundationRimac.debug.xcconfig"; path = "Target Support Files/Pods-Rimac-FoundationRimac/Pods-Rimac-FoundationRimac.debug.xcconfig"; sourceTree = "<group>"; };
+		A360ACB2845345A3E377432A /* Pods_FoundationRimac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoundationRimac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5E643318257C0C56F90407B /* Pods-Rimac-FoundationRimac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rimac-FoundationRimac.release.xcconfig"; path = "Target Support Files/Pods-Rimac-FoundationRimac/Pods-Rimac-FoundationRimac.release.xcconfig"; sourceTree = "<group>"; };
 		FD4D2C1D29E9E4D800F525D3 /* FoundationRimac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FoundationRimac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4D2C2029E9E4D800F525D3 /* FoundationRimac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoundationRimac.h; sourceTree = "<group>"; };
+		FD6B865B29EDE78000EE1F77 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -20,17 +28,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE0AC5886B9ECB087B07F84A /* Pods_FoundationRimac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ABBC6558DADE8322FE9664AC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A360ACB2845345A3E377432A /* Pods_FoundationRimac.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC09AF8FE29F8513B835091D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89BE151494CE1AEC361850DF /* Pods-Rimac-FoundationRimac.debug.xcconfig */,
+				C5E643318257C0C56F90407B /* Pods-Rimac-FoundationRimac.release.xcconfig */,
+				069336522471BAD3187F0D36 /* Pods-FoundationRimac.debug.xcconfig */,
+				4D4D85299CB58B1B0CCF1E37 /* Pods-FoundationRimac.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 		FD4D2C1329E9E4D800F525D3 = {
 			isa = PBXGroup;
 			children = (
 				FD4D2C1F29E9E4D800F525D3 /* FoundationRimac */,
 				FD4D2C1E29E9E4D800F525D3 /* Products */,
+				DC09AF8FE29F8513B835091D /* Pods */,
+				ABBC6558DADE8322FE9664AC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				FD4D2C2029E9E4D800F525D3 /* FoundationRimac.h */,
+				FD6B865B29EDE78000EE1F77 /* TestView.swift */,
 			);
 			path = FoundationRimac;
 			sourceTree = "<group>";
@@ -68,6 +100,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD4D2C2429E9E4D800F525D3 /* Build configuration list for PBXNativeTarget "FoundationRimac" */;
 			buildPhases = (
+				78ECE3C397A7D1ED8E1A9930 /* [CP] Check Pods Manifest.lock */,
 				FD4D2C1829E9E4D800F525D3 /* Headers */,
 				FD4D2C1929E9E4D800F525D3 /* Sources */,
 				FD4D2C1A29E9E4D800F525D3 /* Frameworks */,
@@ -93,6 +126,7 @@
 				TargetAttributes = {
 					FD4D2C1C29E9E4D800F525D3 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -124,11 +158,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		78ECE3C397A7D1ED8E1A9930 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoundationRimac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FD4D2C1929E9E4D800F525D3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD6B865C29EDE78000EE1F77 /* TestView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +317,9 @@
 		};
 		FD4D2C2529E9E4D800F525D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 069336522471BAD3187F0D36 /* Pods-FoundationRimac.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -268,6 +330,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -277,15 +340,21 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.abletoaid.FoundationRimac;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		FD4D2C2629E9E4D800F525D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D4D85299CB58B1B0CCF1E37 /* Pods-FoundationRimac.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -296,6 +365,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,9 +375,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.abletoaid.FoundationRimac;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
